@@ -5,6 +5,8 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "strictNullChecks": true,
     "outDir": "./dist/",
     "rootDir": "src",
@@ -14,8 +16,14 @@
     "declaration": true,
     "target": "ES5",
     "skipLibCheck": true,
+    "esModuleInterop": true,
     "lib": [
+      "DOM",
       "ES6"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "./typings"
     ]
   },
   "include": [
