@@ -23,6 +23,7 @@ This repository shows a MVP for publishing React components to Bitbucket for oth
 - Linting
 - Package scoping
 - Semantic versioning (important!!!)
+- TypeScript and generation of `index.d.ts` for specifying type information to IDEs (extremely useful for devs!)
 
 # Reference(s)
 
