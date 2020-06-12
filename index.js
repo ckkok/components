@@ -1,3 +1,1 @@
-import Greeting from './src/components/Greeting';
-
-export { Greeting };
+module.exports = require('./dist');
