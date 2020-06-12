@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Greeting() {
+function Greeting({ name = 'Bob' }) {
   return (
     <div className="osg-greeting">
-      Hello there!
+      Hello there, {name}!
     </div>
   )
 }
