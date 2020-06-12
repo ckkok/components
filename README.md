@@ -49,7 +49,7 @@ To develop new components for the library:
 - Generation of `index.d.ts` to specify type information for IDEs
 - Linting: run `npm run lint`
   - Configured with ESLint and Prettier, with React and TypeScript recommended settings
-- Test infrastructure with Mocha, Chai, and Enzyme: run `npm run test:unit`
+- Test infrastructure with Mocha, Chai, and Enzyme: run `npm run test`
   - Write unit tests in files ending with `.test.tsx` next to your components
   - Observe that no test is needed to assert that the name property of the Greeting component has to be a string. TypeScript will not compile if a non-string is provided.
 - Styling of components and bundling of CSS (or processing of SCSS) via Webpack
