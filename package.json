@@ -2,8 +2,9 @@
   "name": "@kok_chee_kean/react-component-examples",
   "version": "1.0.0",
   "description": "Exported component examples",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "build": "webpack --mode production",
@@ -22,7 +23,7 @@
   },
   "files": [
     "dist",
-    "index.js",
+    "src",
     "README.md",
     "LICENCE"
   ],

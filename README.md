@@ -18,11 +18,11 @@ This repository shows a MVP for publishing React components to Bitbucket for oth
 
 # Things That This Example Takes Care Of
 
-- Webpack and Babel transpilation of JSX to ES5 syntax for export
-  - Check `webpack.config.js` and `.babelrc`
+- Webpack and TypeScript transpilation of TSX to ES5 syntax for export
+  - Check `webpack.config.js` and `tsconfig.json`
 - `package.json` configuration for exporting as npm package
   - Note the `files` and `peerDependencies` sections
-- TypeScript and generation of `index.d.ts` for specifying type information to IDEs (extremely useful for devs!)
+- Generation of `index.d.ts` to specify type information for IDEs
 - Linting
   - Configured with ESLint and Prettier, with React and TypeScript recommended settings
   - Run `npm run lint`
