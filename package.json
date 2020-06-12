@@ -2,7 +2,8 @@
   "name": "@kok_chee_kean/react-component-examples",
   "version": "1.0.0",
   "description": "Exported component examples",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "webpack --mode production"
   },
@@ -15,6 +16,7 @@
   },
   "files": [
     "dist",
+    "index.js",
     "README.md",
     "LICENCE"
   ],
@@ -26,7 +28,15 @@
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
+    "@types/node": "^14.0.13",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "source-map-loader": "^1.0.0",
+    "typescript": "^3.9.5",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
