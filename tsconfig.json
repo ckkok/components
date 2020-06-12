@@ -12,7 +12,11 @@
     "removeComments": true,
     "sourceMap": true,
     "declaration": true,
-    "target": "ES5"
+    "target": "ES5",
+    "skipLibCheck": true,
+    "lib": [
+      "ES6"
+    ]
   },
   "include": [
     "./src"
