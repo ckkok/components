@@ -7,6 +7,9 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'commonjs2'
   },
+  resolve: {
+    extensions: [".js", ".json", ".ts", ".tsx"]
+  },
   module: {
     rules: [
       {
