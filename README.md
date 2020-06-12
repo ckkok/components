@@ -8,7 +8,7 @@ This repository shows a MVP for publishing React components to Bitbucket for oth
 
 - Run `npm install git+ssh://git@bitbucket-ssh.ship.gov.sg:7999/~kok_chee_kean/react-component-examples.git` to install this as a package.
 
-- Then, `import { Greeting } from 'react-component-examples'` and voila!
+- Then, `import { Greeting } from '@kok_chee_kean/react-component-examples'` and voila!
 
 # Things That This Package Takes Care Of
 
@@ -24,7 +24,7 @@ This repository shows a MVP for publishing React components to Bitbucket for oth
 - Linting
 - Package scoping
 - Semantic versioning (important!!!)
-
+- Tests (definitely important!!! Install Mocha, Chai, and Enzyme and start writing the things)
 
 # Reference(s)
 
