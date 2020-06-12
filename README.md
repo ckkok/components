@@ -10,21 +10,31 @@ This repository shows a MVP for publishing React components to Bitbucket for oth
 
 - Then, `import { Greeting } from '@kok_chee_kean/react-component-examples'` and voila!
 
-# Things That This Package Takes Care Of
+# Publishing
+
+- Run `npm run build` to compile package
+- Push the package up to the repository to publish it for consumption
+  - Change the `version` value in `package.json` so that consumers can install specific versions by appending `#1.0.0` (example) to the git url when running `npm install`
+
+# Things That This Example Takes Care Of
 
 - Webpack and Babel transpilation of JSX to ES5 syntax for export
   - Check `webpack.config.js` and `.babelrc`
 - `package.json` configuration for exporting as npm package
   - Note the `files` and `peerDependencies` sections
 - TypeScript and generation of `index.d.ts` for specifying type information to IDEs (extremely useful for devs!)
+- Linting
+  - Configured with ESLint and Prettier, with React and TypeScript recommended settings
+  - Run `npm run lint`
+- Test infrastructure with Mocha, Chai, and Enzyme configured for TypeScript
+  - Run `npm run test:unit` to run all `.test.tsx` files in the `src` folders
+  - Observe that no test is needed to assert that the name property of the Greeting component has to be a string. TypeScript will not compile if a non-string is provided.
 
-# Things That This Package Does NOT Take Care Of (but you should!)
+# Things That This Example Does NOT Take Care Of (but you should!)
 
 - Styling of components and bundling of CSS (or processing of SCSS) via Webpack
-- Linting
 - Package scoping
 - Semantic versioning (important!!!)
-- Tests (definitely important!!! Install Mocha, Chai, and Enzyme and start writing the things)
 
 # Stretch Goals
 

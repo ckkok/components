@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "module": "CommonJS",
+    "module": "commonjs",
     "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
     "outDir": "./dist/",
+    "rootDir": "src",
     "preserveConstEnums": true,
     "removeComments": true,
     "sourceMap": true,
@@ -11,6 +15,10 @@
     "target": "ES5"
   },
   "include": [
-    "src/index.tsx"
+    "./src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }
