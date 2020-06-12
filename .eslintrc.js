@@ -8,6 +8,11 @@ module.exports = {
       jsx: true
     }
   },
+  env: {
+    browser: true,
+    node: true,
+    mocha: true
+  },
   plugins: [
     '@typescript-eslint',
   ],
@@ -16,7 +21,8 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:mocha/recommended'
   ],
   settings: {
     react: {
