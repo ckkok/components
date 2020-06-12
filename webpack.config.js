@@ -1,11 +1,13 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    filename: 'index.js'
+  },
+  resolve: {
+    extensions: [".js", ".json", ".ts", ".tsx"]
   },
   resolve: {
     extensions: [".js", ".json", ".ts", ".tsx"]
@@ -13,12 +15,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(ts|tsx)$/,
         include: path.resolve(__dirname, 'src'),
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: "awesome-typescript-loader"
         }
+      },
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader"
+      },
+      {
+        test: /\.css$/,
+        loader: "css-loader"
       }
     ]
   }
