@@ -16,7 +16,6 @@ This repository shows a MVP for publishing React components to Bitbucket for oth
   - Check `webpack.config.js` and `.babelrc`
 - `package.json` configuration for exporting as npm package
   - Note the `files` and `peerDependencies` sections
-- TypeScript and generation of `index.d.ts` for specifying type information to IDEs (extremely useful for devs!)
 
 # Things That This Package Does NOT Take Care Of (but you should!)
 
@@ -24,7 +23,7 @@ This repository shows a MVP for publishing React components to Bitbucket for oth
 - Linting
 - Package scoping
 - Semantic versioning (important!!!)
-
+- TypeScript and generation of `index.d.ts` for specifying type information to IDEs (extremely useful for devs!)
 
 # Reference(s)
 
