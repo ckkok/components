@@ -14,7 +14,10 @@
     "react-dom": "^16.13.1"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "README.md",
+    "LICENCE",
+    "components/"
   ],
   "repository": {
     "type": "git",
