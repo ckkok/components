@@ -4,7 +4,6 @@
   "description": "Exported component examples",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "typings": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "build": "webpack --mode production",
