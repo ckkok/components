@@ -1,6 +1,6 @@
 # React Component Library Example
 
-This repository shows a MVP for publishing React components to Bitbucket for other projects to import as dependencies.
+This repository shows a MVP for publishing React components to Bitbucket for other projects to import as dependencies. A sample consumer app can be found [here](https://bitbucket.ship.gov.sg/users/kok_chee_kean/repos/cra-import-component-example/browse).
 
 # Why Use a Component Library?
 
