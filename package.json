@@ -8,7 +8,7 @@
     "clean": "rimraf dist/*",
     "lint": "eslint ./src --quiet --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint ./src --quiet --fix --ext .js,.jsx,.ts,.tsx",
-    "test": "ts-mocha --reporter min -p test/tsconfig.json 'src/**/*.test.tsx'",
+    "test": "nyc ts-mocha --reporter min -p test/tsconfig.json 'src/**/*.test.tsx'",
     "test:watch": "ts-mocha -p test/tsconfig.json --watch --watch-files 'src/**/*.test.tsx' 'src/**/*.test.tsx'",
     "compile": "webpack --display errors-only",
     "build": "npm run clean && npm run lint && npm run test && webpack --display errors-only"
@@ -32,6 +32,7 @@
     "url": "ssh://git@bitbucket-ssh.ship.gov.sg:7999/~kok_chee_kean/react-component-examples.git"
   },
   "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/chai": "^4.2.11",
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
@@ -66,6 +67,7 @@
     "jsdom-global": "^3.0.2",
     "mini-css-extract-plugin": "^0.9.0",
     "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
     "parse5": "^5.1.1",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
@@ -76,6 +78,7 @@
     "sass-loader": "^8.0.2",
     "sinon": "^9.0.2",
     "source-map-loader": "^1.0.0",
+    "source-map-support": "^0.5.19",
     "style-loader": "^1.2.1",
     "ts-mocha": "^7.0.0",
     "ts-node": "^8.10.2",
