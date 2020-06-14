@@ -99,5 +99,5 @@ Business and state logic are the responsibilities of the application, not the li
 
 # Stretch Goals
 
-- Set up a private NPM registry, e.g. using Verdaccio or npm-register, so that devs can do `npm install @kok_chee_kean/react-component-examples` instead while keeping that repository private
+- Set up a private NPM registry, e.g. using Verdaccio or npm-register, so that devs can do `npm install @ckkok/react-component-examples` instead while keeping that repository private
 
