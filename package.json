@@ -1,5 +1,5 @@
 {
-  "name": "@kok_chee_kean/react-component-examples",
+  "name": "@ckkok/react-component-examples",
   "version": "1.0.0",
   "description": "Exported component examples",
   "main": "dist/index.js",
@@ -15,7 +15,7 @@
   },
   "keywords": [],
   "author": "Kok Chee Kean",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

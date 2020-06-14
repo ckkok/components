@@ -1,6 +1,6 @@
 # React Component Library Example
 
-This repository shows a MVP for publishing React components to Bitbucket for other projects to import as dependencies. A sample consumer app can be found [here](https://bitbucket.ship.gov.sg/users/kok_chee_kean/repos/cra-import-component-example/browse).
+This repository shows a MVP for publishing React components to Bitbucket for other projects to import as dependencies.
 
 # Why Use a Component Library?
 
@@ -26,13 +26,11 @@ Business and state logic are the responsibilities of the application, not the li
 
 # Using Components from the Library
 
-- Ensure that you have access to this repository at `https://bitbucket.ship.gov.sg/users/kok_chee_kean/repos/react-component-examples/browse`
+- In your project, run `npm install git+<url to this repository>` to install this as a package.
 
-- In your project, run `npm install git+ssh://git@bitbucket-ssh.ship.gov.sg:7999/~kok_chee_kean/react-component-examples.git` to install this as a package.
+- Import the component(s) you need, e.g. `import { Greeting } from '@ckkok/react-component-examples'`
 
-- Import the component(s) you need, e.g. `import { Greeting } from '@kok_chee_kean/react-component-examples'`
-
-- Import the stylesheet, e.g. `import '@kok_chee_kean/react-component-examples/dist/styles.css'`
+- Import the stylesheet, e.g. `import '@ckkok/react-component-examples/dist/styles.css'`
 
 - (_Optional_) Configure Webpack for tree-shaking in your project to remove unused components and reduce your bundle size
 
@@ -103,6 +101,3 @@ Business and state logic are the responsibilities of the application, not the li
 
 - Set up a private NPM registry, e.g. using Verdaccio or npm-register, so that devs can do `npm install @kok_chee_kean/react-component-examples` instead while keeping that repository private
 
-# Reference(s)
-
-In all likelihood, for a complete (but extremely heavy) solution, you may wish to follow https://www.pluralsight.com/guides/publish-es6-react-modules-to-npm, which is based off the use of the `create-react-app` tool. However, the instructions there do not implement many of the auxilliary features here.
