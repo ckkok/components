@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { mount, ReactWrapper } from 'enzyme';
 import { Greeting } from './index';
+import { expect } from 'chai';
 
 describe('<Greeting /> component test', function () {
   it('should render a default name of Bob', function () {

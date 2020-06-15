@@ -29,13 +29,8 @@ module.exports = {
         include: path.resolve(__dirname, 'src'),
         exclude: /node_modules/,
         use: {
-          loader: "awesome-typescript-loader"
+          loader: "ts-loader"
         }
-      },
-      {
-        enforce: "pre",
-        test: /\.js$/,
-        loader: "source-map-loader"
       },
       {
         test: /\.(c|sc|sa)ss$/,
