@@ -1,4 +1,4 @@
-const COVERAGE_THRESHOLD_PERCENTAGE = 75;
+const COVERAGE_THRESHOLD_PERCENTAGE = 95;
 
 module.exports = {
   "extends": "@istanbuljs/nyc-config-typescript",
